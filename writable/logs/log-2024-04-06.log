@@ -1,0 +1,45 @@
+ERROR - 2024-04-06 15:01:13 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;users&quot; does not exist
+LINE 2: FROM &quot;users&quot;
+             ^ in C:\xampp\htdocs\e-commerce\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\e-commerce\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT 1\nFROM "...')
+#2 C:\xampp\htdocs\e-commerce\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT 1\nFROM "...')
+#3 C:\xampp\htdocs\e-commerce\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM "...')
+#4 C:\xampp\htdocs\e-commerce\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\e-commerce\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\e-commerce\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('alessioaffuso22...', 'email', Array, NULL, 'email')
+#7 C:\xampp\htdocs\e-commerce\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'alessioaffuso22...', Array, Array)
+#8 C:\xampp\htdocs\e-commerce\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#9 C:\xampp\htdocs\e-commerce\app\Controllers\Registrazione.php(18): CodeIgniter\Controller->validate(Array)
+#10 C:\xampp\htdocs\e-commerce\system\CodeIgniter.php(934): App\Controllers\Registrazione->registra()
+#11 C:\xampp\htdocs\e-commerce\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registrazione))
+#12 C:\xampp\htdocs\e-commerce\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\e-commerce\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2024-04-06 15:01:13 --> pg_query(): Query failed: ERROR:  relation &quot;users&quot; does not exist
+LINE 2: FROM &quot;users&quot;
+             ^
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM "users"
+WHERE "email" = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('alessioaffuso2208@gmail.com', 'email', [...], null, 'email')
+ 4 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'alessioaffuso2208@gmail.com', [...], [...])
+ 5 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 6 APPPATH\Controllers\Registrazione.php(18): CodeIgniter\Controller->validate([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Registrazione->registra()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registrazione))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-06 15:23:13 --> Invalid file: "welcome_message.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('welcome_message.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('welcome_message', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('welcome_message')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

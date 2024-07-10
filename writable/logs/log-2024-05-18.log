@@ -1,0 +1,66 @@
+CRITICAL - 2024-05-18 14:47:08 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\EmailController.php on line 284.
+ 1 APPPATH\Controllers\EmailController.php(284): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\EmailController.php', 284)
+ 2 APPPATH\Controllers\Buyer\OrdineBuyer.php(63): App\Controllers\EmailController->confermaAnnullamentoOrdine(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buyer\OrdineBuyer->annulla()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buyer\OrdineBuyer))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-18 14:48:48 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Buyer\OrdineBuyer.php on line 63.
+ 1 APPPATH\Controllers\Buyer\OrdineBuyer.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Buyer\\OrdineBuyer.php', 63)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buyer\OrdineBuyer->annulla()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buyer\OrdineBuyer))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-18 15:25:34 --> Undefined variable $conteggio_recensioni
+in APPPATH\Views\buyer\prodotto_buyer.php on line 69.
+ 1 APPPATH\Views\buyer\prodotto_buyer.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $conteggio_recensioni', 'APPPATH\\Views\\buyer\\prodotto_buyer.php', 69)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\buyer\\prodotto_buyer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('buyer/prodotto_buyer', [], true)
+ 5 APPPATH\Controllers\Buyer\CatalogoBuyer.php(37): view('buyer/prodotto_buyer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buyer\CatalogoBuyer->prodotto('16', '16')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buyer\CatalogoBuyer))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-18 15:28:42 --> Undefined variable $media_stelle
+in APPPATH\Views\index.php on line 146.
+ 1 APPPATH\Views\index.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $media_stelle', 'APPPATH\\Views\\index.php', 146)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-18 15:30:40 --> Undefined array key "id"
+in APPPATH\Controllers\Home.php on line 17.
+ 1 APPPATH\Controllers\Home.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\Home.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-18 15:30:48 --> Undefined variable $media_stelle
+in APPPATH\Views\index.php on line 146.
+ 1 APPPATH\Views\index.php(146): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $media_stelle', 'APPPATH\\Views\\index.php', 146)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Home.php(27): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-18 15:33:17 --> Undefined variable $media_stelle
+in APPPATH\Views\buyer\ordine_buyer.php on line 139.
+ 1 APPPATH\Views\buyer\ordine_buyer.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $media_stelle', 'APPPATH\\Views\\buyer\\ordine_buyer.php', 139)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\buyer\\ordine_buyer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('buyer/ordine_buyer', [], true)
+ 5 APPPATH\Controllers\Buyer\OrdineBuyer.php(19): view('buyer/ordine_buyer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buyer\OrdineBuyer->index('16', '16')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buyer\OrdineBuyer))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,41 @@
+CRITICAL - 2024-04-26 15:29:49 --> Undefined array key "userid"
+in APPPATH\Controllers\EmailController.php on line 39.
+ 1 APPPATH\Controllers\EmailController.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "userid"', 'APPPATH\\Controllers\\EmailController.php', 39)
+ 2 APPPATH\Controllers\Registrazione.php(41): App\Controllers\EmailController->confermaRegistrazione([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Registrazione->registra()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registrazione))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-26 16:29:29 --> Undefined array key "id"
+in APPPATH\Views\catalogo_buyer.php on line 34.
+ 1 APPPATH\Views\catalogo_buyer.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\catalogo_buyer.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\catalogo_buyer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('catalogo_buyer', [], true)
+ 5 APPPATH\Controllers\CatalogoBuyer.php(13): view('catalogo_buyer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CatalogoBuyer->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoBuyer))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-26 16:31:54 --> Undefined array key "url_immagine"
+in APPPATH\Views\catalogo_buyer.php on line 35.
+ 1 APPPATH\Views\catalogo_buyer.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url_immagine"', 'APPPATH\\Views\\catalogo_buyer.php', 35)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\catalogo_buyer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('catalogo_buyer', [], true)
+ 5 APPPATH\Controllers\CatalogoBuyer.php(13): view('catalogo_buyer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CatalogoBuyer->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoBuyer))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-26 16:34:02 --> Undefined array key "id"
+in APPPATH\Views\catalogo_buyer.php on line 38.
+ 1 APPPATH\Views\catalogo_buyer.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\catalogo_buyer.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\catalogo_buyer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('catalogo_buyer', [], true)
+ 5 APPPATH\Controllers\CatalogoBuyer.php(13): view('catalogo_buyer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CatalogoBuyer->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoBuyer))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

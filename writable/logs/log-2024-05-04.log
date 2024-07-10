@@ -1,0 +1,16 @@
+ERROR - 2024-05-04 14:41:28 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to smtp-mail.outlook.com:587 (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) in C:\xampp\htdocs\OlivApulia\system\Email\Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): Un...', 'C:\\xampp\\htdocs...', 1863)
+#1 C:\xampp\htdocs\OlivApulia\system\Email\Email.php(1863): fsockopen('smtp-mail.outlo...', 587, NULL, NULL, 5)
+#2 C:\xampp\htdocs\OlivApulia\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\OlivApulia\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\OlivApulia\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\OlivApulia\app\Controllers\EmailController.php(105): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\OlivApulia\app\Controllers\Login.php(75): App\Controllers\EmailController->confermaCambioPassword(Array)
+#7 C:\xampp\htdocs\OlivApulia\system\CodeIgniter.php(934): App\Controllers\Login->passwordResetRequest()
+#8 C:\xampp\htdocs\OlivApulia\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\xampp\htdocs\OlivApulia\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\OlivApulia\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2024-05-04 14:41:28 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-05-04 14:41:28 --> 

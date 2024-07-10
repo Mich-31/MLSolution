@@ -1,0 +1,49 @@
+CRITICAL - 2024-05-01 09:44:26 --> Undefined array key "nome_utente"
+in APPPATH\Views\prodotto.php on line 45.
+ 1 APPPATH\Views\prodotto.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nome_utente"', 'APPPATH\\Views\\prodotto.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\prodotto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('prodotto', [], true)
+ 5 APPPATH\Controllers\CatalogoBuyer.php(32): view('prodotto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CatalogoBuyer->prodotto('3', '3')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoBuyer))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-01 09:44:57 --> Undefined array key "nome_utente"
+in APPPATH\Views\prodotto.php on line 45.
+ 1 APPPATH\Views\prodotto.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nome_utente"', 'APPPATH\\Views\\prodotto.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\prodotto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('prodotto', [], true)
+ 5 APPPATH\Controllers\CatalogoBuyer.php(32): view('prodotto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CatalogoBuyer->prodotto('3', '3')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoBuyer))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-01 09:54:49 --> Undefined variable $prodotto
+in APPPATH\Views\acquista.php on line 7.
+ 1 APPPATH\Views\acquista.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $prodotto', 'APPPATH\\Views\\acquista.php', 7)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\acquista.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('acquista', [], true)
+ 5 APPPATH\Controllers\Acquista.php(9): view('acquista')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Acquista->index('3', '3')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Acquista))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-01 10:20:16 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('ordine/invia', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-01 10:20:35 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('ordine/invia', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

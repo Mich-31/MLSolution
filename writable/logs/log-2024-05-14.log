@@ -1,0 +1,401 @@
+CRITICAL - 2024-05-14 09:42:22 --> Undefined array key "email"
+in APPPATH\Views\buyer\profilo_buyer.php on line 43.
+ 1 APPPATH\Views\buyer\profilo_buyer.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'APPPATH\\Views\\buyer\\profilo_buyer.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\buyer\\profilo_buyer.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('buyer/profilo_buyer', [], true)
+ 5 APPPATH\Controllers\Buyer\ProfiloBuyer.php(20): view('buyer/profilo_buyer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buyer\ProfiloBuyer->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buyer\ProfiloBuyer))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-14 09:43:23 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-05-14 09:43:23 --> 220 PR3P195CA0017.outlook.office365.com Microsoft ESMTP MAIL Service ready at Tue, 14 May 2024 09:43:16 +0000
+
+hello: 250-PR3P195CA0017.outlook.office365.com Hello [37.163.108.181]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+hello: 250-PR3P195CA0017.outlook.office365.com Hello [37.163.108.181]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-AUTH LOGIN XOAUTH2
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+ERROR - 2024-05-14 09:43:40 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-05-14 09:43:40 --> 220 PA7P264CA0108.outlook.office365.com Microsoft ESMTP MAIL Service ready at Tue, 14 May 2024 09:43:33 +0000
+
+hello: 250-PA7P264CA0108.outlook.office365.com Hello [37.163.108.181]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+hello: 250-PA7P264CA0108.outlook.office365.com Hello [37.163.108.181]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-AUTH LOGIN XOAUTH2
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+CRITICAL - 2024-05-14 09:46:59 --> Invalid file: "prodotto.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('prodotto.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('prodotto', [], true)
+ 3 APPPATH\Controllers\Buyer\CatalogoBuyer.php(37): view('prodotto', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buyer\CatalogoBuyer->prodotto('8', '8')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buyer\CatalogoBuyer))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-14 09:48:33 --> Invalid file: "buyer/prodotto.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('buyer/prodotto.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('buyer/prodotto', [], true)
+ 3 APPPATH\Controllers\Buyer\CatalogoBuyer.php(37): view('buyer/prodotto', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buyer\CatalogoBuyer->prodotto('8', '8')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buyer\CatalogoBuyer))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-14 09:48:36 --> Invalid file: "buyer/prodotto.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('buyer/prodotto.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('buyer/prodotto', [], true)
+ 3 APPPATH\Controllers\Buyer\CatalogoBuyer.php(37): view('buyer/prodotto', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buyer\CatalogoBuyer->prodotto('8', '8')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buyer\CatalogoBuyer))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-14 09:49:45 --> include(navbar.php): Failed to open stream: No such file or directory
+in APPPATH\Views\buyer\prodotto_buyer.php on line 15.
+ 1 APPPATH\Views\buyer\prodotto_buyer.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(navbar.php): Failed to open stream: No such file or directory', 'APPPATH\\Views\\buyer\\prodotto_buyer.php', 15)
+ 2 APPPATH\Views\buyer\prodotto_buyer.php(15): include()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\buyer\\prodotto_buyer.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('buyer/prodotto_buyer', [], true)
+ 6 APPPATH\Controllers\Buyer\CatalogoBuyer.php(37): view('buyer/prodotto_buyer', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buyer\CatalogoBuyer->prodotto('8', '8')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buyer\CatalogoBuyer))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-14 13:28:08 --> Invalid file: "ordine.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ordine.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ordine', [], true)
+ 3 APPPATH\Controllers\Buyer\OrdineBuyer.php(19): view('ordine', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buyer\OrdineBuyer->index('9', '9')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buyer\OrdineBuyer))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-14 13:28:33 --> include(navbar.php): Failed to open stream: No such file or directory
+in APPPATH\Views\buyer\ordine_buyer.php on line 15.
+ 1 APPPATH\Views\buyer\ordine_buyer.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(navbar.php): Failed to open stream: No such file or directory', 'APPPATH\\Views\\buyer\\ordine_buyer.php', 15)
+ 2 APPPATH\Views\buyer\ordine_buyer.php(15): include()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\buyer\\ordine_buyer.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('buyer/ordine_buyer', [], true)
+ 6 APPPATH\Controllers\Buyer\OrdineBuyer.php(19): view('buyer/ordine_buyer', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buyer\OrdineBuyer->index('9', '9')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buyer\OrdineBuyer))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-14 14:01:47 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-05-14 14:01:47 --> 220 PA7P264CA0525.outlook.office365.com Microsoft ESMTP MAIL Service ready at Tue, 14 May 2024 14:01:40 +0000
+
+hello: 250-PA7P264CA0525.outlook.office365.com Hello [37.161.58.48]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+hello: 250-PA7P264CA0525.outlook.office365.com Hello [37.161.58.48]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-AUTH LOGIN XOAUTH2
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+ERROR - 2024-05-14 14:04:52 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-05-14 14:04:52 --> 220 PR1P264CA0146.outlook.office365.com Microsoft ESMTP MAIL Service ready at Tue, 14 May 2024 14:04:45 +0000
+
+hello: 250-PR1P264CA0146.outlook.office365.com Hello [37.161.58.48]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+hello: 250-PR1P264CA0146.outlook.office365.com Hello [37.161.58.48]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-AUTH LOGIN XOAUTH2
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+ERROR - 2024-05-14 14:05:37 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-05-14 14:05:37 --> 220 PA7P264CA0276.outlook.office365.com Microsoft ESMTP MAIL Service ready at Tue, 14 May 2024 14:05:30 +0000
+
+hello: 250-PA7P264CA0276.outlook.office365.com Hello [37.161.58.48]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+hello: 250-PA7P264CA0276.outlook.office365.com Hello [37.161.58.48]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-AUTH LOGIN XOAUTH2
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+ERROR - 2024-05-14 14:06:41 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-05-14 14:06:41 --> 220 PA7P264CA0196.outlook.office365.com Microsoft ESMTP MAIL Service ready at Tue, 14 May 2024 14:06:33 +0000
+
+hello: 250-PA7P264CA0196.outlook.office365.com Hello [37.161.58.48]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+hello: 250-PA7P264CA0196.outlook.office365.com Hello [37.161.58.48]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-AUTH LOGIN XOAUTH2
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+ERROR - 2024-05-14 14:08:58 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-05-14 14:08:58 --> 220 PA7P264CA0099.outlook.office365.com Microsoft ESMTP MAIL Service ready at Tue, 14 May 2024 14:08:51 +0000
+
+hello: 250-PA7P264CA0099.outlook.office365.com Hello [37.161.58.48]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+hello: 250-PA7P264CA0099.outlook.office365.com Hello [37.161.58.48]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-AUTH LOGIN XOAUTH2
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+ERROR - 2024-05-14 14:09:50 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-05-14 14:09:50 --> 220 PR1P264CA0057.outlook.office365.com Microsoft ESMTP MAIL Service ready at Tue, 14 May 2024 14:09:42 +0000
+
+hello: 250-PR1P264CA0057.outlook.office365.com Hello [37.161.58.48]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+hello: 250-PR1P264CA0057.outlook.office365.com Hello [37.161.58.48]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-AUTH LOGIN XOAUTH2
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+CRITICAL - 2024-05-14 14:20:59 --> Invalid file: "ordini_admin.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ordini_admin.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('ordini_admin', [], true)
+ 3 APPPATH\Controllers\Admin\OrdiniAdmin.php(15): view('ordini_admin', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrdiniAdmin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrdiniAdmin))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-14 14:21:11 --> include(navbar.php): Failed to open stream: No such file or directory
+in APPPATH\Views\admin\ordini_admin.php on line 15.
+ 1 APPPATH\Views\admin\ordini_admin.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(navbar.php): Failed to open stream: No such file or directory', 'APPPATH\\Views\\admin\\ordini_admin.php', 15)
+ 2 APPPATH\Views\admin\ordini_admin.php(15): include()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\ordini_admin.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/ordini_admin', [], true)
+ 6 APPPATH\Controllers\Admin\OrdiniAdmin.php(15): view('admin/ordini_admin', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrdiniAdmin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrdiniAdmin))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-14 14:50:13 --> Invalid file: "profilo_admin.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('profilo_admin.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('profilo_admin', [], true)
+ 3 APPPATH\Controllers\Admin\ProfiloAdmin.php(16): view('profilo_admin', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\ProfiloAdmin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProfiloAdmin))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-14 14:50:25 --> include(navbar.php): Failed to open stream: No such file or directory
+in APPPATH\Views\admin\profilo_admin.php on line 16.
+ 1 APPPATH\Views\admin\profilo_admin.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(navbar.php): Failed to open stream: No such file or directory', 'APPPATH\\Views\\admin\\profilo_admin.php', 16)
+ 2 APPPATH\Views\admin\profilo_admin.php(16): include()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\profilo_admin.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/profilo_admin', [], true)
+ 6 APPPATH\Controllers\Admin\ProfiloAdmin.php(16): view('admin/profilo_admin', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\ProfiloAdmin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProfiloAdmin))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-14 15:13:08 --> Invalid file: "modifica_prodotto.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('modifica_prodotto.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('modifica_prodotto', [], true)
+ 3 APPPATH\Controllers\Admin\CatalogoAdmin.php(87): view('modifica_prodotto', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\CatalogoAdmin->viewModificaProdottoById('8', '8')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CatalogoAdmin))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-14 15:14:02 --> include(navbar.php): Failed to open stream: No such file or directory
+in APPPATH\Views\admin\modifica_prodotto.php on line 15.
+ 1 APPPATH\Views\admin\modifica_prodotto.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(navbar.php): Failed to open stream: No such file or directory', 'APPPATH\\Views\\admin\\modifica_prodotto.php', 15)
+ 2 APPPATH\Views\admin\modifica_prodotto.php(15): include()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\modifica_prodotto.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/modifica_prodotto', [], true)
+ 6 APPPATH\Controllers\Admin\CatalogoAdmin.php(87): view('/admin/modifica_prodotto', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\CatalogoAdmin->viewModificaProdottoById('8', '8')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CatalogoAdmin))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-14 15:19:35 --> include(navbar.php): Failed to open stream: No such file or directory
+in APPPATH\Views\admin\modifica_prodotto.php on line 15.
+ 1 APPPATH\Views\admin\modifica_prodotto.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(navbar.php): Failed to open stream: No such file or directory', 'APPPATH\\Views\\admin\\modifica_prodotto.php', 15)
+ 2 APPPATH\Views\admin\modifica_prodotto.php(15): include()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\modifica_prodotto.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/admin/modifica_prodotto', [], true)
+ 6 APPPATH\Controllers\Admin\CatalogoAdmin.php(87): view('/admin/modifica_prodotto', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\CatalogoAdmin->viewModificaProdottoById('8', '8')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CatalogoAdmin))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-14 15:33:48 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;$1&quot;
+LINE 3: WHERE &quot;prodotto&quot;.&quot;prodottoid&quot; = '$1'
+                                        ^ in C:\xampp\htdocs\OlivApulia\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\OlivApulia\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT *\nFROM "...')
+#2 C:\xampp\htdocs\OlivApulia\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp\htdocs\OlivApulia\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp\htdocs\OlivApulia\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\OlivApulia\system\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\OlivApulia\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '$1')
+#7 C:\xampp\htdocs\OlivApulia\app\Controllers\Admin\CatalogoAdmin.php(86): CodeIgniter\BaseModel->find('$1')
+#8 C:\xampp\htdocs\OlivApulia\system\CodeIgniter.php(934): App\Controllers\Admin\CatalogoAdmin->modificaProdotto('$1')
+#9 C:\xampp\htdocs\OlivApulia\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CatalogoAdmin))
+#10 C:\xampp\htdocs\OlivApulia\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\OlivApulia\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-05-14 15:33:48 --> pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;$1&quot;
+LINE 3: WHERE &quot;prodotto&quot;.&quot;prodottoid&quot; = '$1'
+                                        ^
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "prodotto"
+WHERE "prodotto"."prodottoid" = :prodotto.prodottoid:', [...], false)
+ 2 SYSTEMPATH\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '$1')
+ 4 APPPATH\Controllers\Admin\CatalogoAdmin.php(86): CodeIgniter\BaseModel->find('$1')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\CatalogoAdmin->modificaProdotto('$1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CatalogoAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

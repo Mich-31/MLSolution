@@ -1,0 +1,305 @@
+CRITICAL - 2024-05-15 10:17:17 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('catalogo_admin/modifica_prodotto/8', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-15 10:21:30 --> Undefined array key "categoria"
+in APPPATH\Views\admin\modifica_prodotto.php on line 88.
+ 1 APPPATH\Views\admin\modifica_prodotto.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "categoria"', 'APPPATH\\Views\\admin\\modifica_prodotto.php', 88)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\modifica_prodotto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/modifica_prodotto', [], true)
+ 5 APPPATH\Controllers\Admin\CatalogoAdmin.php(89): view('admin/modifica_prodotto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\CatalogoAdmin->viewModificaProdotto('10', '10')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CatalogoAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-15 10:24:03 --> Undefined array key "immagine"
+in APPPATH\Views\admin\modifica_prodotto.php on line 107.
+ 1 APPPATH\Views\admin\modifica_prodotto.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "immagine"', 'APPPATH\\Views\\admin\\modifica_prodotto.php', 107)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\modifica_prodotto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/modifica_prodotto', [], true)
+ 5 APPPATH\Controllers\Admin\CatalogoAdmin.php(89): view('admin/modifica_prodotto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\CatalogoAdmin->viewModificaProdotto('10', '10')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CatalogoAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-15 10:36:52 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-05-15 10:36:52 --> 220 PR1P264CA0070.outlook.office365.com Microsoft ESMTP MAIL Service ready at Wed, 15 May 2024 10:36:43 +0000
+
+hello: 250-PR1P264CA0070.outlook.office365.com Hello [78.210.179.121]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+hello: 250-PR1P264CA0070.outlook.office365.com Hello [78.210.179.121]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-AUTH LOGIN XOAUTH2
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+ERROR - 2024-05-15 10:37:48 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-05-15 10:37:48 --> 220 MI2P293CA0009.outlook.office365.com Microsoft ESMTP MAIL Service ready at Wed, 15 May 2024 10:37:41 +0000
+
+hello: 250-MI2P293CA0009.outlook.office365.com Hello [78.210.179.121]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+hello: 250-MI2P293CA0009.outlook.office365.com Hello [78.210.179.121]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-AUTH LOGIN XOAUTH2
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+ERROR - 2024-05-15 10:38:52 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-05-15 10:38:52 --> 220 MI0P293CA0012.outlook.office365.com Microsoft ESMTP MAIL Service ready at Wed, 15 May 2024 10:38:43 +0000
+
+hello: 250-MI0P293CA0012.outlook.office365.com Hello [78.210.179.121]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+hello: 250-MI0P293CA0012.outlook.office365.com Hello [78.210.179.121]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-AUTH LOGIN XOAUTH2
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+CRITICAL - 2024-05-15 10:40:06 --> Invalid file: "modifica_ordine.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('modifica_ordine.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('modifica_ordine', [], true)
+ 3 APPPATH\Controllers\Admin\OrdiniAdmin.php(22): view('modifica_ordine', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrdiniAdmin->modificaOrdine('15', '15')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrdiniAdmin))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-15 10:40:22 --> include(navbar.php): Failed to open stream: No such file or directory
+in APPPATH\Views\admin\modifica_ordine.php on line 15.
+ 1 APPPATH\Views\admin\modifica_ordine.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(navbar.php): Failed to open stream: No such file or directory', 'APPPATH\\Views\\admin\\modifica_ordine.php', 15)
+ 2 APPPATH\Views\admin\modifica_ordine.php(15): include()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\modifica_ordine.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/modifica_ordine', [], true)
+ 6 APPPATH\Controllers\Admin\OrdiniAdmin.php(22): view('admin/modifica_ordine', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrdiniAdmin->modificaOrdine('15', '15')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrdiniAdmin))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-15 10:46:42 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-05-15 10:46:42 --> 220 PR0P264CA0235.outlook.office365.com Microsoft ESMTP MAIL Service ready at Wed, 15 May 2024 10:46:34 +0000
+
+hello: 250-PR0P264CA0235.outlook.office365.com Hello [78.210.179.121]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+hello: 250-PR0P264CA0235.outlook.office365.com Hello [78.210.179.121]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-AUTH LOGIN XOAUTH2
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+ERROR - 2024-05-15 10:47:12 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-05-15 10:47:12 --> 220 PA7P264CA0121.outlook.office365.com Microsoft ESMTP MAIL Service ready at Wed, 15 May 2024 10:47:04 +0000
+
+hello: 250-PA7P264CA0121.outlook.office365.com Hello [78.210.179.121]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+hello: 250-PA7P264CA0121.outlook.office365.com Hello [78.210.179.121]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-AUTH LOGIN XOAUTH2
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+ERROR - 2024-05-15 10:47:56 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-05-15 10:47:56 --> 220 PR0P264CA0169.outlook.office365.com Microsoft ESMTP MAIL Service ready at Wed, 15 May 2024 10:47:48 +0000
+
+hello: 250-PR0P264CA0169.outlook.office365.com Hello [78.210.179.121]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+hello: 250-PR0P264CA0169.outlook.office365.com Hello [78.210.179.121]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-AUTH LOGIN XOAUTH2
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+ERROR - 2024-05-15 13:59:08 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type timestamp: &quot;&quot;
+LINE 1: ... &quot;prodottoid&quot; = '8', &quot;quantita&quot; = '120', &quot;data&quot; = '', &quot;stato...
+                                                             ^ in C:\xampp\htdocs\OlivApulia\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\OlivApulia\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'UPDATE "ordine"...')
+#2 C:\xampp\htdocs\OlivApulia\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "ordine"...')
+#3 C:\xampp\htdocs\OlivApulia\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "ordine"...')
+#4 C:\xampp\htdocs\OlivApulia\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "ordine"...', Array, false)
+#5 C:\xampp\htdocs\OlivApulia\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#6 C:\xampp\htdocs\OlivApulia\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#7 C:\xampp\htdocs\OlivApulia\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#8 C:\xampp\htdocs\OlivApulia\app\Controllers\Admin\OrdiniAdmin.php(55): CodeIgniter\Model->update('17', Array)
+#9 C:\xampp\htdocs\OlivApulia\system\CodeIgniter.php(934): App\Controllers\Admin\OrdiniAdmin->aggiornaOrdine('17', '17')
+#10 C:\xampp\htdocs\OlivApulia\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrdiniAdmin))
+#11 C:\xampp\htdocs\OlivApulia\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\OlivApulia\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-05-15 13:59:08 --> pg_query(): Query failed: ERROR:  invalid input syntax for type timestamp: &quot;&quot;
+LINE 1: ... &quot;prodottoid&quot; = '8', &quot;quantita&quot; = '120', &quot;data&quot; = '', &quot;stato...
+                                                             ^
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "ordine" SET "userid" = :userid:, "prodottoid" = :prodottoid:, "quantita" = :quantita:, "data" = :data:, "stato" = :stato:, "totale" = :totale:, "datispedizione" = :datispedizione:, "datifatturazione" = :datifatturazione:
+WHERE "ordine"."ordineid" IN :ordine.ordineid:', [...], false)
+ 2 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\Admin\OrdiniAdmin.php(55): CodeIgniter\Model->update('17', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrdiniAdmin->aggiornaOrdine('17', '17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrdiniAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-15 13:59:40 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type timestamp: &quot;&quot;
+LINE 1: UPDATE &quot;ordine&quot; SET &quot;quantita&quot; = '120', &quot;data&quot; = '', &quot;stato&quot;...
+                                                         ^ in C:\xampp\htdocs\OlivApulia\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\OlivApulia\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'UPDATE "ordine"...')
+#2 C:\xampp\htdocs\OlivApulia\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "ordine"...')
+#3 C:\xampp\htdocs\OlivApulia\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "ordine"...')
+#4 C:\xampp\htdocs\OlivApulia\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "ordine"...', Array, false)
+#5 C:\xampp\htdocs\OlivApulia\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#6 C:\xampp\htdocs\OlivApulia\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#7 C:\xampp\htdocs\OlivApulia\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#8 C:\xampp\htdocs\OlivApulia\app\Controllers\Admin\OrdiniAdmin.php(53): CodeIgniter\Model->update('17', Array)
+#9 C:\xampp\htdocs\OlivApulia\system\CodeIgniter.php(934): App\Controllers\Admin\OrdiniAdmin->aggiornaOrdine('17', '17')
+#10 C:\xampp\htdocs\OlivApulia\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrdiniAdmin))
+#11 C:\xampp\htdocs\OlivApulia\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\OlivApulia\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-05-15 13:59:40 --> pg_query(): Query failed: ERROR:  invalid input syntax for type timestamp: &quot;&quot;
+LINE 1: UPDATE &quot;ordine&quot; SET &quot;quantita&quot; = '120', &quot;data&quot; = '', &quot;stato&quot;...
+                                                         ^
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "ordine" SET "quantita" = :quantita:, "data" = :data:, "stato" = :stato:, "totale" = :totale:, "datispedizione" = :datispedizione:, "datifatturazione" = :datifatturazione:
+WHERE "ordine"."ordineid" IN :ordine.ordineid:', [...], false)
+ 2 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\Admin\OrdiniAdmin.php(53): CodeIgniter\Model->update('17', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrdiniAdmin->aggiornaOrdine('17', '17')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrdiniAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-15 14:04:41 --> Undefined variable $prodotto
+in APPPATH\Views\admin\modifica_ordine.php on line 86.
+ 1 APPPATH\Views\admin\modifica_ordine.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $prodotto', 'APPPATH\\Views\\admin\\modifica_ordine.php', 86)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\modifica_ordine.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/modifica_ordine', [], true)
+ 5 APPPATH\Controllers\Admin\OrdiniAdmin.php(28): view('admin/modifica_ordine', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrdiniAdmin->modificaOrdine('18', '18')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrdiniAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-15 14:07:04 --> Undefined variable $utente_corrente
+in APPPATH\Views\admin\modifica_ordine.php on line 105.
+ 1 APPPATH\Views\admin\modifica_ordine.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $utente_corrente', 'APPPATH\\Views\\admin\\modifica_ordine.php', 105)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\modifica_ordine.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/modifica_ordine', [], true)
+ 5 APPPATH\Controllers\Admin\OrdiniAdmin.php(28): view('admin/modifica_ordine', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrdiniAdmin->modificaOrdine('18', '18')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrdiniAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

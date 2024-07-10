@@ -1,0 +1,47 @@
+CRITICAL - 2024-05-10 15:17:03 --> Undefined array key "ordineid"
+in APPPATH\Controllers\EmailController.php on line 242.
+ 1 APPPATH\Controllers\EmailController.php(242): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ordineid"', 'APPPATH\\Controllers\\EmailController.php', 242)
+ 2 APPPATH\Controllers\Ordine.php(38): App\Controllers\EmailController->confermaOrdine([...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ordine->invia()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ordine))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-10 15:17:44 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-05-10 15:17:44 --> 220 MI1P293CA0009.outlook.office365.com Microsoft ESMTP MAIL Service ready at Fri, 10 May 2024 15:17:41 +0000
+
+hello: 250-MI1P293CA0009.outlook.office365.com Hello [2.228.124.70]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+hello: 250-MI1P293CA0009.outlook.office365.com Hello [2.228.124.70]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-AUTH LOGIN XOAUTH2
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 Sender OK
+
+to: 250 2.1.5 Recipient OK
+
+data: 354 Start mail input; end with <CRLF>.<CRLF>
+
+554 5.2.0 STOREDRV.Submission.Exception:OutboundSpamException; Failed to process message due to a permanent exception with message [BeginDiagnosticData]WASCL UserAction verdict is not None. Actual verdict is Suspend, ShowTierUpgrade. OutboundSpamException: WASCL UserAction verdict is not None. Actual verdict is Suspend, ShowTierUpgrade.[EndDiagnosticData] [Hostname=DB5PR02MB10095.eurprd02.prod.outlook.com]
+
+quit: 221 2.0.0 Service closing transmission channel
+
+The following SMTP error was encountered: 554 5.2.0 STOREDRV.Submission.Exception:OutboundSpamException; Failed to process message due to a permanent exception with message [BeginDiagnosticData]WASCL UserAction verdict is not None. Actual verdict is Suspend, ShowTierUpgrade. OutboundSpamException: WASCL UserAction verdict is not None. Actual verdict is Suspend, ShowTierUpgrade.[EndDiagnosticData] [Hostname=DB5PR02MB10095.eurprd02.prod.outlook.com]
+

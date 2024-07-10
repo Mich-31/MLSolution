@@ -1,0 +1,22 @@
+CRITICAL - 2024-04-11 09:23:45 --> Undefined array key "id"
+in APPPATH\Views\catalogo_admin.php on line 109.
+ 1 APPPATH\Views\catalogo_admin.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\catalogo_admin.php', 109)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\catalogo_admin.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('catalogo_admin', [], true)
+ 5 APPPATH\Controllers\CatalogoAdmin.php(9): view('catalogo_admin')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CatalogoAdmin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-11 09:39:32 --> Undefined array key "id"
+in APPPATH\Views\modifica_prodotto.php on line 19.
+ 1 APPPATH\Views\modifica_prodotto.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\modifica_prodotto.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\modifica_prodotto.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('modifica_prodotto', [], true)
+ 5 APPPATH\Controllers\CatalogoAdmin.php(61): view('modifica_prodotto', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CatalogoAdmin->viewModificaProdottoById('6', '6')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

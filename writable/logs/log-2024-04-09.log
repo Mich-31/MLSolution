@@ -1,0 +1,176 @@
+ERROR - 2024-04-09 08:41:35 --> ErrorException: pg_query(): Query failed: ERROR:  null value in column &quot;email&quot; of relation &quot;utente&quot; violates not-null constraint
+DETAIL:  Failing row contains (10, null, null, null, $2y$10$8/EBsE21GorttOevv7A90ux2bDe4hzYR9NMqpPmwLRWgOY8ArxtTO, null). in C:\xampp\htdocs\e-commerce\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\e-commerce\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "ut...')
+#2 C:\xampp\htdocs\e-commerce\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "ut...')
+#3 C:\xampp\htdocs\e-commerce\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "ut...')
+#4 C:\xampp\htdocs\e-commerce\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "ut...', Array, false)
+#5 C:\xampp\htdocs\e-commerce\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\e-commerce\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\e-commerce\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp\htdocs\e-commerce\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp\htdocs\e-commerce\app\Controllers\Login.php(62): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp\htdocs\e-commerce\system\CodeIgniter.php(934): App\Controllers\Login->passwordResetRequest()
+#11 C:\xampp\htdocs\e-commerce\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#12 C:\xampp\htdocs\e-commerce\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\e-commerce\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2024-04-09 08:41:35 --> pg_query(): Query failed: ERROR:  null value in column &quot;email&quot; of relation &quot;utente&quot; violates not-null constraint
+DETAIL:  Failing row contains (10, null, null, null, $2y$10$8/EBsE21GorttOevv7A90ux2bDe4hzYR9NMqpPmwLRWgOY8ArxtTO, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "utente" ("userid", "password") VALUES (:userid:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Login.php(62): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->passwordResetRequest()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-09 08:42:37 --> ErrorException: pg_query(): Query failed: ERROR:  null value in column &quot;email&quot; of relation &quot;utente&quot; violates not-null constraint
+DETAIL:  Failing row contains (13, null, null, null, $2y$10$/UKIMKJSDck2uV.z8JsDQeNpA.jkhuS0Xc9zKzBZ7.5XVLlSUr93., null). in C:\xampp\htdocs\e-commerce\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\e-commerce\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "ut...')
+#2 C:\xampp\htdocs\e-commerce\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "ut...')
+#3 C:\xampp\htdocs\e-commerce\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "ut...')
+#4 C:\xampp\htdocs\e-commerce\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "ut...', Array, false)
+#5 C:\xampp\htdocs\e-commerce\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\e-commerce\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\e-commerce\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp\htdocs\e-commerce\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp\htdocs\e-commerce\app\Controllers\Login.php(62): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp\htdocs\e-commerce\system\CodeIgniter.php(934): App\Controllers\Login->passwordResetRequest()
+#11 C:\xampp\htdocs\e-commerce\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#12 C:\xampp\htdocs\e-commerce\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\e-commerce\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2024-04-09 08:42:37 --> pg_query(): Query failed: ERROR:  null value in column &quot;email&quot; of relation &quot;utente&quot; violates not-null constraint
+DETAIL:  Failing row contains (13, null, null, null, $2y$10$/UKIMKJSDck2uV.z8JsDQeNpA.jkhuS0Xc9zKzBZ7.5XVLlSUr93., null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "utente" ("password") VALUES (:password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Login.php(62): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->passwordResetRequest()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-09 08:46:58 --> ErrorException: pg_query(): Query failed: ERROR:  null value in column &quot;email&quot; of relation &quot;utente&quot; violates not-null constraint
+DETAIL:  Failing row contains (10, null, null, null, $2y$10$UuYkj9R7lD71Y636TSm7/uCLeffIJPupi3raaEDxQzLLtvaVE3Ype, null). in C:\xampp\htdocs\e-commerce\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\e-commerce\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "ut...')
+#2 C:\xampp\htdocs\e-commerce\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "ut...')
+#3 C:\xampp\htdocs\e-commerce\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "ut...')
+#4 C:\xampp\htdocs\e-commerce\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "ut...', Array, false)
+#5 C:\xampp\htdocs\e-commerce\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\e-commerce\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\e-commerce\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp\htdocs\e-commerce\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp\htdocs\e-commerce\app\Controllers\Login.php(62): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp\htdocs\e-commerce\system\CodeIgniter.php(934): App\Controllers\Login->passwordResetRequest()
+#11 C:\xampp\htdocs\e-commerce\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#12 C:\xampp\htdocs\e-commerce\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\e-commerce\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2024-04-09 08:46:58 --> pg_query(): Query failed: ERROR:  null value in column &quot;email&quot; of relation &quot;utente&quot; violates not-null constraint
+DETAIL:  Failing row contains (10, null, null, null, $2y$10$UuYkj9R7lD71Y636TSm7/uCLeffIJPupi3raaEDxQzLLtvaVE3Ype, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "utente" ("userid", "password") VALUES (:userid:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Login.php(62): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->passwordResetRequest()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-09 08:56:27 --> ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;utente_pkey&quot;
+DETAIL:  Key (userid)=(10) already exists. in C:\xampp\htdocs\e-commerce\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\e-commerce\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "ut...')
+#2 C:\xampp\htdocs\e-commerce\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "ut...')
+#3 C:\xampp\htdocs\e-commerce\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "ut...')
+#4 C:\xampp\htdocs\e-commerce\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "ut...', Array, false)
+#5 C:\xampp\htdocs\e-commerce\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\e-commerce\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\e-commerce\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#8 C:\xampp\htdocs\e-commerce\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#9 C:\xampp\htdocs\e-commerce\app\Controllers\Login.php(62): CodeIgniter\BaseModel->save(Array)
+#10 C:\xampp\htdocs\e-commerce\system\CodeIgniter.php(934): App\Controllers\Login->passwordResetRequest()
+#11 C:\xampp\htdocs\e-commerce\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#12 C:\xampp\htdocs\e-commerce\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\e-commerce\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2024-04-09 08:56:27 --> pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;utente_pkey&quot;
+DETAIL:  Key (userid)=(10) already exists.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "utente" ("userid", "email", "password") VALUES (:userid:, :email:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Login.php(62): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->passwordResetRequest()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-09 08:58:11 --> ErrorException: pg_query(): Query failed: ERROR:  column utente.id does not exist
+LINE 2: WHERE &quot;utente&quot;.&quot;id&quot; IN ('10')
+              ^ in C:\xampp\htdocs\e-commerce\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\e-commerce\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'UPDATE "utente"...')
+#2 C:\xampp\htdocs\e-commerce\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "utente"...')
+#3 C:\xampp\htdocs\e-commerce\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "utente"...')
+#4 C:\xampp\htdocs\e-commerce\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "utente"...', Array, false)
+#5 C:\xampp\htdocs\e-commerce\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#6 C:\xampp\htdocs\e-commerce\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#7 C:\xampp\htdocs\e-commerce\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#8 C:\xampp\htdocs\e-commerce\app\Controllers\Login.php(63): CodeIgniter\Model->update('10', Array)
+#9 C:\xampp\htdocs\e-commerce\system\CodeIgniter.php(934): App\Controllers\Login->passwordResetRequest()
+#10 C:\xampp\htdocs\e-commerce\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#11 C:\xampp\htdocs\e-commerce\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\e-commerce\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-04-09 08:58:11 --> pg_query(): Query failed: ERROR:  column utente.id does not exist
+LINE 2: WHERE &quot;utente&quot;.&quot;id&quot; IN ('10')
+              ^
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE "utente" SET "password" = :password:
+WHERE "utente"."id" IN :utente.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\Login.php(63): CodeIgniter\Model->update('10', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->passwordResetRequest()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-09 09:15:29 --> ini_set(): Session ini settings cannot be changed when a session is active
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 72.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed when a session is active', 'SYSTEMPATH\\Session\\Handlers\\FileHandler.php', 72)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(72): ini_set('session.save_path', 'ROOTPATH\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(667): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Common.php(988): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 APPPATH\Views\navbar.php(24): session()
+10 APPPATH\Views\profilo_admin.php(20): include('APPPATH\\Views\\navbar.php')
+11 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\profilo_admin.php')
+12 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+13 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('profilo_admin', [], true)
+14 APPPATH\Controllers\ProfiloAdmin.php(9): view('profilo_admin')
+15 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ProfiloAdmin->index()
+16 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfiloAdmin))
+17 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+18 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

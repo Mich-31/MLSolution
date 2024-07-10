@@ -1,0 +1,361 @@
+ERROR - 2024-05-13 10:11:51 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-05-13 10:11:51 --> 220 PA7P264CA0136.outlook.office365.com Microsoft ESMTP MAIL Service ready at Mon, 13 May 2024 10:11:41 +0000
+
+hello: 250-PA7P264CA0136.outlook.office365.com Hello [78.209.162.93]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+hello: 250-PA7P264CA0136.outlook.office365.com Hello [78.209.162.93]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-AUTH LOGIN XOAUTH2
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+ERROR - 2024-05-13 10:12:40 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-05-13 10:12:40 --> 220 PR0P264CA0246.outlook.office365.com Microsoft ESMTP MAIL Service ready at Mon, 13 May 2024 10:12:30 +0000
+
+hello: 250-PR0P264CA0246.outlook.office365.com Hello [78.209.162.93]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+hello: 250-PR0P264CA0246.outlook.office365.com Hello [78.209.162.93]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-AUTH LOGIN XOAUTH2
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+ERROR - 2024-05-13 10:15:05 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-05-13 10:15:05 --> 220 MI0P293CA0007.outlook.office365.com Microsoft ESMTP MAIL Service ready at Mon, 13 May 2024 10:14:55 +0000
+
+hello: 250-MI0P293CA0007.outlook.office365.com Hello [78.209.162.93]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+hello: 250-MI0P293CA0007.outlook.office365.com Hello [78.209.162.93]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-AUTH LOGIN XOAUTH2
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+CRITICAL - 2024-05-13 14:21:18 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('registrazione/registra', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-13 14:31:22 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-05-13 14:31:22 --> 220 PR3P193CA0057.outlook.office365.com Microsoft ESMTP MAIL Service ready at Mon, 13 May 2024 14:31:16 +0000
+
+hello: 250-PR3P193CA0057.outlook.office365.com Hello [37.163.116.33]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+hello: 250-PR3P193CA0057.outlook.office365.com Hello [37.163.116.33]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-AUTH LOGIN XOAUTH2
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+CRITICAL - 2024-05-13 14:37:28 --> Class "App\Controllers\Buyer\Controller" not found
+in APPPATH\Controllers\Buyer\ProfiloBuyer.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Buyer\\ProfiloBuyer.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Buyer\\ProfiloBuyer')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Buyer\\ProfiloBuyer')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Buyer\\ProfiloBuyer', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-13 14:37:34 --> Class "App\Controllers\Buyer\BaseController" not found
+in APPPATH\Controllers\Buyer\ProfiloBuyer.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Buyer\\ProfiloBuyer.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Buyer\\ProfiloBuyer')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Buyer\\ProfiloBuyer')
+ 5 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Buyer\\ProfiloBuyer', true)
+ 6 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-13 14:38:32 --> include(navbar.php): Failed to open stream: No such file or directory
+in APPPATH\Views\buyer\profilo_buyer.php on line 16.
+ 1 APPPATH\Views\buyer\profilo_buyer.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(navbar.php): Failed to open stream: No such file or directory', 'APPPATH\\Views\\buyer\\profilo_buyer.php', 16)
+ 2 APPPATH\Views\buyer\profilo_buyer.php(16): include()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\buyer\\profilo_buyer.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('buyer/profilo_buyer', [], true)
+ 6 APPPATH\Controllers\Buyer\ProfiloBuyer.php(20): view('buyer/profilo_buyer', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buyer\ProfiloBuyer->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buyer\ProfiloBuyer))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-13 14:42:16 --> include(../navbar.php): Failed to open stream: No such file or directory
+in APPPATH\Views\buyer\profilo_buyer.php on line 16.
+ 1 APPPATH\Views\buyer\profilo_buyer.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(../navbar.php): Failed to open stream: No such file or directory', 'APPPATH\\Views\\buyer\\profilo_buyer.php', 16)
+ 2 APPPATH\Views\buyer\profilo_buyer.php(16): include()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\buyer\\profilo_buyer.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('buyer/profilo_buyer', [], true)
+ 6 APPPATH\Controllers\Buyer\ProfiloBuyer.php(20): view('buyer/profilo_buyer', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buyer\ProfiloBuyer->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buyer\ProfiloBuyer))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-13 14:42:32 --> include(../navbar.php): Failed to open stream: No such file or directory
+in APPPATH\Views\buyer\profilo_buyer.php on line 16.
+ 1 APPPATH\Views\buyer\profilo_buyer.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(../navbar.php): Failed to open stream: No such file or directory', 'APPPATH\\Views\\buyer\\profilo_buyer.php', 16)
+ 2 APPPATH\Views\buyer\profilo_buyer.php(16): include()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\buyer\\profilo_buyer.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('buyer/profilo_buyer', [], true)
+ 6 APPPATH\Controllers\Buyer\ProfiloBuyer.php(20): view('buyer/profilo_buyer', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buyer\ProfiloBuyer->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buyer\ProfiloBuyer))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-13 14:42:33 --> include(../navbar.php): Failed to open stream: No such file or directory
+in APPPATH\Views\buyer\profilo_buyer.php on line 16.
+ 1 APPPATH\Views\buyer\profilo_buyer.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(../navbar.php): Failed to open stream: No such file or directory', 'APPPATH\\Views\\buyer\\profilo_buyer.php', 16)
+ 2 APPPATH\Views\buyer\profilo_buyer.php(16): include()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\buyer\\profilo_buyer.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('buyer/profilo_buyer', [], true)
+ 6 APPPATH\Controllers\Buyer\ProfiloBuyer.php(20): view('buyer/profilo_buyer', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buyer\ProfiloBuyer->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buyer\ProfiloBuyer))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-13 14:43:01 --> include(footer.php): Failed to open stream: No such file or directory
+in APPPATH\Views\buyer\profilo_buyer.php on line 122.
+ 1 APPPATH\Views\buyer\profilo_buyer.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(footer.php): Failed to open stream: No such file or directory', 'APPPATH\\Views\\buyer\\profilo_buyer.php', 122)
+ 2 APPPATH\Views\buyer\profilo_buyer.php(122): include()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\buyer\\profilo_buyer.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('buyer/profilo_buyer', [], true)
+ 6 APPPATH\Controllers\Buyer\ProfiloBuyer.php(20): view('buyer/profilo_buyer', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Buyer\ProfiloBuyer->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Buyer\ProfiloBuyer))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-13 15:15:31 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-05-13 15:15:31 --> 220 PA7P264CA0129.outlook.office365.com Microsoft ESMTP MAIL Service ready at Mon, 13 May 2024 15:15:23 +0000
+
+hello: 250-PA7P264CA0129.outlook.office365.com Hello [37.163.116.33]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+hello: 250-PA7P264CA0129.outlook.office365.com Hello [37.163.116.33]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-AUTH LOGIN XOAUTH2
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+ERROR - 2024-05-13 15:17:49 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-05-13 15:17:49 --> 220 PR0P264CA0238.outlook.office365.com Microsoft ESMTP MAIL Service ready at Mon, 13 May 2024 15:17:41 +0000
+
+hello: 250-PR0P264CA0238.outlook.office365.com Hello [37.163.116.33]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+hello: 250-PR0P264CA0238.outlook.office365.com Hello [37.163.116.33]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-AUTH LOGIN XOAUTH2
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+ERROR - 2024-05-13 15:18:48 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-05-13 15:18:48 --> 220 MI0P293CA0007.outlook.office365.com Microsoft ESMTP MAIL Service ready at Mon, 13 May 2024 15:18:42 +0000
+
+hello: 250-MI0P293CA0007.outlook.office365.com Hello [37.163.116.33]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+hello: 250-MI0P293CA0007.outlook.office365.com Hello [37.163.116.33]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-AUTH LOGIN XOAUTH2
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+ERROR - 2024-05-13 15:22:58 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-05-13 15:22:58 --> 220 PA7P264CA0183.outlook.office365.com Microsoft ESMTP MAIL Service ready at Mon, 13 May 2024 15:22:51 +0000
+
+hello: 250-PA7P264CA0183.outlook.office365.com Hello [37.163.116.33]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+hello: 250-PA7P264CA0183.outlook.office365.com Hello [37.163.116.33]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-AUTH LOGIN XOAUTH2
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+ERROR - 2024-05-13 15:38:34 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-05-13 15:38:34 --> 220 PR3P189CA0077.outlook.office365.com Microsoft ESMTP MAIL Service ready at Mon, 13 May 2024 15:38:27 +0000
+
+hello: 250-PR3P189CA0077.outlook.office365.com Hello [37.163.116.33]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+hello: 250-PR3P189CA0077.outlook.office365.com Hello [37.163.116.33]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-AUTH LOGIN XOAUTH2
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+CRITICAL - 2024-05-13 15:41:33 --> Invalid file: "catalogo_admin.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('catalogo_admin.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('catalogo_admin', [], true)
+ 3 APPPATH\Controllers\Admin\CatalogoAdmin.php(17): view('catalogo_admin', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\CatalogoAdmin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CatalogoAdmin))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-13 15:41:46 --> include(navbar.php): Failed to open stream: No such file or directory
+in APPPATH\Views\admin\catalogo_admin.php on line 15.
+ 1 APPPATH\Views\admin\catalogo_admin.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(navbar.php): Failed to open stream: No such file or directory', 'APPPATH\\Views\\admin\\catalogo_admin.php', 15)
+ 2 APPPATH\Views\admin\catalogo_admin.php(15): include()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\catalogo_admin.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/catalogo_admin', [], true)
+ 6 APPPATH\Controllers\Admin\CatalogoAdmin.php(17): view('admin/catalogo_admin', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\CatalogoAdmin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CatalogoAdmin))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

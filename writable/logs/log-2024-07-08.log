@@ -1,0 +1,505 @@
+ERROR - 2024-07-08 10:24:57 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;prodotto&quot; does not exist
+LINE 2: FROM &quot;prodotto&quot;
+             ^ in C:\xampp\htdocs\OlivApulia\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\OlivApulia\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT *\nFROM "...')
+#2 C:\xampp\htdocs\OlivApulia\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp\htdocs\OlivApulia\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp\htdocs\OlivApulia\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\OlivApulia\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\OlivApulia\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\OlivApulia\app\Controllers\Home.php(15): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\OlivApulia\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 C:\xampp\htdocs\OlivApulia\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\OlivApulia\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\OlivApulia\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-07-08 10:24:57 --> pg_query(): Query failed: ERROR:  relation &quot;prodotto&quot; does not exist
+LINE 2: FROM &quot;prodotto&quot;
+             ^
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "prodotto"', [], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(15): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-08 11:06:57 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('registra', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-08 11:07:16 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('registra', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-08 11:07:34 --> ErrorException: pg_query(): Query failed: ERROR:  null value in column &quot;email_address&quot; of relation &quot;customer&quot; violates not-null constraint
+DETAIL:  Failing row contains (1, null, null, Alberto2009@, null, null, 0, null). in C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "cu...')
+#2 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "cu...')
+#3 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "cu...')
+#4 C:\xampp\htdocs\MLSolutions\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "cu...', Array, false)
+#5 C:\xampp\htdocs\MLSolutions\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\MLSolutions\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\MLSolutions\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\MLSolutions\app\Controllers\Registrazione.php(26): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(934): App\Controllers\Registrazione->registra()
+#10 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registrazione))
+#11 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\MLSolutions\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-07-08 11:07:34 --> pg_query(): Query failed: ERROR:  null value in column &quot;email_address&quot; of relation &quot;customer&quot; violates not-null constraint
+DETAIL:  Failing row contains (1, null, null, Alberto2009@, null, null, 0, null).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "customer" ("company_name", "email_address", "password", "first_name", "surname", "credit", "payment_information") VALUES (:company_name:, :email_address:, :password:, :first_name:, :surname:, :credit:, :payment_information:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Registrazione.php(26): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Registrazione->registra()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registrazione))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-08 12:56:56 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('autenticazione', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-08 12:57:21 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;email&quot; does not exist
+LINE 3: WHERE &quot;email&quot; = 'michele@gmail.com'
+              ^ in C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT *\nFROM "...')
+#2 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp\htdocs\MLSolutions\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\MLSolutions\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\MLSolutions\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\MLSolutions\app\Controllers\Login.php(20): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(934): App\Controllers\Login->autenticazione()
+#9 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\MLSolutions\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-07-08 12:57:21 --> pg_query(): Query failed: ERROR:  column &quot;email&quot; does not exist
+LINE 3: WHERE &quot;email&quot; = 'michele@gmail.com'
+              ^
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "customer"
+WHERE "email" = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Login.php(20): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->autenticazione()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-08 12:58:12 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;email&quot; does not exist
+LINE 3: WHERE &quot;email&quot; = 'michele@gmail.com'
+              ^ in C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT *\nFROM "...')
+#2 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp\htdocs\MLSolutions\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\MLSolutions\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\MLSolutions\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\MLSolutions\app\Controllers\Login.php(20): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(934): App\Controllers\Login->autenticazione()
+#9 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\MLSolutions\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-07-08 12:58:12 --> pg_query(): Query failed: ERROR:  column &quot;email&quot; does not exist
+LINE 3: WHERE &quot;email&quot; = 'michele@gmail.com'
+              ^
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "customer"
+WHERE "email" = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Login.php(20): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->autenticazione()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-08 12:59:11 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;email&quot; does not exist
+LINE 3: WHERE &quot;email&quot; = 'alessioaffuso2208@gmail.com'
+              ^ in C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT *\nFROM "...')
+#2 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp\htdocs\MLSolutions\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\MLSolutions\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\MLSolutions\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#7 C:\xampp\htdocs\MLSolutions\app\Controllers\Login.php(20): CodeIgniter\BaseModel->first()
+#8 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(934): App\Controllers\Login->autenticazione()
+#9 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\MLSolutions\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-07-08 12:59:11 --> pg_query(): Query failed: ERROR:  column &quot;email&quot; does not exist
+LINE 3: WHERE &quot;email&quot; = 'alessioaffuso2208@gmail.com'
+              ^
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "customer"
+WHERE "email" = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Login.php(20): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->autenticazione()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-08 13:07:22 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('autenticazione', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-08 14:44:27 --> Undefined array key "name"
+in APPPATH\Views\deploy.php on line 75.
+ 1 APPPATH\Views\deploy.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH\\Views\\deploy.php', 75)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\deploy.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('deploy', [], true)
+ 5 APPPATH\Controllers\Deploy.php(14): view('deploy', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Deploy->deployPage()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deploy))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-08 14:49:33 --> Call to a member function insert() on array
+in APPPATH\Controllers\Deploy.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Deploy->deployModel()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deploy))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-08 15:02:41 --> Undefined array key "platform_id"
+in APPPATH\Controllers\Home.php on line 26.
+ 1 APPPATH\Controllers\Home.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "platform_id"', 'APPPATH\\Controllers\\Home.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-08 15:12:27 --> Undefined array key "platform_id"
+in APPPATH\Controllers\Model.php on line 20.
+ 1 APPPATH\Controllers\Model.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "platform_id"', 'APPPATH\\Controllers\\Model.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Model->viewModel('6', '6')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Model))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-08 15:12:38 --> Undefined array key "cloud_platform_id"
+in APPPATH\Controllers\Model.php on line 20.
+ 1 APPPATH\Controllers\Model.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cloud_platform_id"', 'APPPATH\\Controllers\\Model.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Model->viewModel('6', '6')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Model))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-08 15:14:11 --> Class "App\Controllers\DeploymentModelsModel" not found
+in APPPATH\Controllers\Model.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Model->viewModel('6', '6')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Model))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-08 15:14:18 --> Invalid file: "model_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('model_view.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('model_view', [], true)
+ 3 APPPATH\Controllers\Model.php(36): view('model_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Model->viewModel('6', '6')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Model))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-08 15:15:17 --> Undefined array key "name"
+in APPPATH\Views\model.php on line 26.
+ 1 APPPATH\Views\model.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH\\Views\\model.php', 26)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\model.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('model', [], true)
+ 5 APPPATH\Controllers\Model.php(36): view('model', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Model->viewModel('6', '6')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Model))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-08 19:50:28 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;model_size&quot; of relation &quot;pre_trained&quot; does not exist
+LINE 1: INSERT INTO &quot;pre_trained&quot; (&quot;model_id&quot;, &quot;model_size&quot;, &quot;format...
+                                               ^ in C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "pr...')
+#2 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "pr...')
+#3 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "pr...')
+#4 C:\xampp\htdocs\MLSolutions\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "pr...', Array, false)
+#5 C:\xampp\htdocs\MLSolutions\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\MLSolutions\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\MLSolutions\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\MLSolutions\app\Controllers\Deploy.php(47): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(934): App\Controllers\Deploy->deployModel()
+#10 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deploy))
+#11 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\MLSolutions\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-07-08 19:50:28 --> pg_query(): Query failed: ERROR:  column &quot;model_size&quot; of relation &quot;pre_trained&quot; does not exist
+LINE 1: INSERT INTO &quot;pre_trained&quot; (&quot;model_id&quot;, &quot;model_size&quot;, &quot;format...
+                                               ^
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "pre_trained" ("model_id", "model_size", "format", "dependencies", "performance_metrics") VALUES (:model_id:, :model_size:, :format:, :dependencies:, :performance_metrics:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Deploy.php(47): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Deploy->deployModel()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Deploy))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-08 20:01:09 --> Invalid file: "model_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('model_view.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('model_view', [], true)
+ 3 APPPATH\Controllers\Model.php(42): view('model_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Model->viewModel('12', '12')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Model))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-08 20:01:39 --> Undefined array key "name"
+in APPPATH\Views\model.php on line 26.
+ 1 APPPATH\Views\model.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH\\Views\\model.php', 26)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\model.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('model', [], true)
+ 5 APPPATH\Controllers\Model.php(42): view('model', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Model->viewModel('12', '12')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Model))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-08 20:02:04 --> Undefined array key "model_size"
+in APPPATH\Views\model.php on line 30.
+ 1 APPPATH\Views\model.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "model_size"', 'APPPATH\\Views\\model.php', 30)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\model.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('model', [], true)
+ 5 APPPATH\Controllers\Model.php(42): view('model', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Model->viewModel('12', '12')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Model))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-08 20:17:58 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('submitWebinar', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-08 21:17:12 --> Class "App\Models\WebinarRegistration" not found
+in APPPATH\Controllers\Transaction.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->register('1', '1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-08 21:17:37 --> Class "App\Models\WebinarRegistrationModel" not found
+in APPPATH\Controllers\Transaction.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaction->register('1', '1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-08 21:24:26 --> Undefined variable $platforms
+in APPPATH\Views\subscription.php on line 43.
+ 1 APPPATH\Views\subscription.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $platforms', 'APPPATH\\Views\\subscription.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\subscription.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('subscription', [], true)
+ 5 APPPATH\Controllers\Subscription.php(11): view('subscription')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Subscription->SubscriptionPage()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Subscription))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-08 21:25:05 --> Call to undefined method App\Models\PlatformModel::getPlatforms
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Subscription.php(12): CodeIgniter\Model->__call('getPlatforms', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Subscription->SubscriptionPage()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Subscription))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-08 21:25:25 --> Undefined array key "name"
+in APPPATH\Views\subscription.php on line 44.
+ 1 APPPATH\Views\subscription.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH\\Views\\subscription.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\subscription.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('subscription', [], true)
+ 5 APPPATH\Controllers\Subscription.php(13): view('subscription', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Subscription->SubscriptionPage()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Subscription))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-08 21:53:56 --> Undefined array key "platform_id"
+in APPPATH\Views\subscription.php on line 44.
+ 1 APPPATH\Views\subscription.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "platform_id"', 'APPPATH\\Views\\subscription.php', 44)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\subscription.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('subscription', [], true)
+ 5 APPPATH\Controllers\Subscription.php(13): view('subscription', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Subscription->SubscriptionPage()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Subscription))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-08 23:29:02 --> ErrorException: pg_query(): Query failed: ERROR:  malformed array literal: &quot;Recall 10&quot;
+LINE 1: ...UES ('15', '1.2', '2024-07-02', 'Autostrade.csv', 'Recall 10...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information. in C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "hi...')
+#2 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "hi...')
+#3 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "hi...')
+#4 C:\xampp\htdocs\MLSolutions\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "hi...', Array, false)
+#5 C:\xampp\htdocs\MLSolutions\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\MLSolutions\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\MLSolutions\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\MLSolutions\app\Controllers\History.php(21): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(934): App\Controllers\History->addVersion()
+#10 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\History))
+#11 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\MLSolutions\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-07-08 23:29:02 --> pg_query(): Query failed: ERROR:  malformed array literal: &quot;Recall 10&quot;
+LINE 1: ...UES ('15', '1.2', '2024-07-02', 'Autostrade.csv', 'Recall 10...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "history_model" ("model_id", "version", "update_date", "training_dataset", "performance_metrics", "corresponding_documentation") VALUES (:model_id:, :version:, :update_date:, :training_dataset:, :performance_metrics:, :corresponding_documentation:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\History.php(21): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\History->addVersion()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\History))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-08 23:30:34 --> ErrorException: pg_query(): Query failed: ERROR:  malformed array literal: &quot;10.2&quot;
+LINE 1: ...UES ('15', '1.2', '2024-07-02', 'Autostrade.csv', '10.2', 'D...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information. in C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "hi...')
+#2 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "hi...')
+#3 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "hi...')
+#4 C:\xampp\htdocs\MLSolutions\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "hi...', Array, false)
+#5 C:\xampp\htdocs\MLSolutions\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\MLSolutions\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\MLSolutions\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\MLSolutions\app\Controllers\History.php(21): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(934): App\Controllers\History->addVersion()
+#10 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\History))
+#11 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\MLSolutions\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-07-08 23:30:34 --> pg_query(): Query failed: ERROR:  malformed array literal: &quot;10.2&quot;
+LINE 1: ...UES ('15', '1.2', '2024-07-02', 'Autostrade.csv', '10.2', 'D...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "history_model" ("model_id", "version", "update_date", "training_dataset", "performance_metrics", "corresponding_documentation") VALUES (:model_id:, :version:, :update_date:, :training_dataset:, :performance_metrics:, :corresponding_documentation:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\History.php(21): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\History->addVersion()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\History))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-08 23:30:42 --> ErrorException: pg_query(): Query failed: ERROR:  malformed array literal: &quot;10&quot;
+LINE 1: ...UES ('15', '1.2', '2024-07-02', 'Autostrade.csv', '10', 'Doc...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information. in C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "hi...')
+#2 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "hi...')
+#3 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "hi...')
+#4 C:\xampp\htdocs\MLSolutions\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "hi...', Array, false)
+#5 C:\xampp\htdocs\MLSolutions\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\MLSolutions\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\MLSolutions\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\MLSolutions\app\Controllers\History.php(21): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(934): App\Controllers\History->addVersion()
+#10 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\History))
+#11 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\MLSolutions\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-07-08 23:30:42 --> pg_query(): Query failed: ERROR:  malformed array literal: &quot;10&quot;
+LINE 1: ...UES ('15', '1.2', '2024-07-02', 'Autostrade.csv', '10', 'Doc...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "history_model" ("model_id", "version", "update_date", "training_dataset", "performance_metrics", "corresponding_documentation") VALUES (:model_id:, :version:, :update_date:, :training_dataset:, :performance_metrics:, :corresponding_documentation:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\History.php(21): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\History->addVersion()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\History))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-08 23:31:41 --> ErrorException: pg_query(): Query failed: ERROR:  malformed array literal: &quot;1&quot;
+LINE 1: ...ALUES ('15', '1.2', '2024-07-02', 'DatasetBello', '1', 'Doc....
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information. in C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "hi...')
+#2 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "hi...')
+#3 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "hi...')
+#4 C:\xampp\htdocs\MLSolutions\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "hi...', Array, false)
+#5 C:\xampp\htdocs\MLSolutions\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\MLSolutions\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\MLSolutions\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\MLSolutions\app\Controllers\History.php(21): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(934): App\Controllers\History->addVersion()
+#10 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\History))
+#11 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\MLSolutions\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-07-08 23:31:41 --> pg_query(): Query failed: ERROR:  malformed array literal: &quot;1&quot;
+LINE 1: ...ALUES ('15', '1.2', '2024-07-02', 'DatasetBello', '1', 'Doc....
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "history_model" ("model_id", "version", "update_date", "training_dataset", "performance_metrics", "corresponding_documentation") VALUES (:model_id:, :version:, :update_date:, :training_dataset:, :performance_metrics:, :corresponding_documentation:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\History.php(21): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\History->addVersion()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\History))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

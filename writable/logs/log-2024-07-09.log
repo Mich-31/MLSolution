@@ -1,0 +1,569 @@
+CRITICAL - 2024-07-09 08:21:05 --> syntax error, unexpected token "endforeach", expecting "elseif" or "else" or "endif"
+in APPPATH\Views\index.php on line 65.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH\Controllers\Home.php(37): view('index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 09:21:42 --> Undefined variable $highlights
+in APPPATH\Views\model.php on line 107.
+ 1 APPPATH\Views\model.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $highlights', 'APPPATH\\Views\\model.php', 107)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\model.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('model', [], true)
+ 5 APPPATH\Controllers\Model.php(48): view('model', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Model->viewModel('15', '15')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Model))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 09:21:56 --> Undefined variable $highlights
+in APPPATH\Views\model.php on line 107.
+ 1 APPPATH\Views\model.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $highlights', 'APPPATH\\Views\\model.php', 107)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\model.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('model', [], true)
+ 5 APPPATH\Controllers\Model.php(48): view('model', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Model->viewModel('15', '15')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Model))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 09:22:21 --> Undefined variable $highlights
+in APPPATH\Views\model.php on line 107.
+ 1 APPPATH\Views\model.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $highlights', 'APPPATH\\Views\\model.php', 107)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\model.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('model', [], true)
+ 5 APPPATH\Controllers\Model.php(48): view('model', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Model->viewModel('15', '15')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Model))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 09:23:10 --> syntax error, unexpected token ";"
+in APPPATH\Views\model.php on line 108.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('model', [], true)
+ 3 APPPATH\Controllers\Model.php(48): view('model', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Model->viewModel('15', '15')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Model))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-09 10:53:34 --> ErrorException: pg_query(): Query failed: ERROR:  malformed array literal: &quot;asd&quot;
+LINE 1: ...rocessing_steps&quot;, &quot;features&quot;, &quot;model_id&quot;) VALUES ('asd', 'sa...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information. in C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "hi...')
+#2 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "hi...')
+#3 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "hi...')
+#4 C:\xampp\htdocs\MLSolutions\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "hi...', Array, false)
+#5 C:\xampp\htdocs\MLSolutions\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\MLSolutions\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\MLSolutions\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\MLSolutions\app\Controllers\High.php(18): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(934): App\Controllers\High->add()
+#10 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\High))
+#11 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\MLSolutions\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-07-09 10:53:34 --> pg_query(): Query failed: ERROR:  malformed array literal: &quot;asd&quot;
+LINE 1: ...rocessing_steps&quot;, &quot;features&quot;, &quot;model_id&quot;) VALUES ('asd', 'sa...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "highlight" ("data_preprocessing_steps", "features", "model_id") VALUES (:data_preprocessing_steps:, :features:, :model_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\High.php(18): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\High->add()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\High))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-09 10:54:41 --> ErrorException: pg_query(): Query failed: ERROR:  malformed array literal: &quot;asd&quot;
+LINE 1: ...rocessing_steps&quot;, &quot;features&quot;, &quot;model_id&quot;) VALUES ('asd', '12...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information. in C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "hi...')
+#2 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "hi...')
+#3 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "hi...')
+#4 C:\xampp\htdocs\MLSolutions\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "hi...', Array, false)
+#5 C:\xampp\htdocs\MLSolutions\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\MLSolutions\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\MLSolutions\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\MLSolutions\app\Controllers\High.php(18): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(934): App\Controllers\High->add()
+#10 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\High))
+#11 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\MLSolutions\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-07-09 10:54:41 --> pg_query(): Query failed: ERROR:  malformed array literal: &quot;asd&quot;
+LINE 1: ...rocessing_steps&quot;, &quot;features&quot;, &quot;model_id&quot;) VALUES ('asd', '12...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "highlight" ("data_preprocessing_steps", "features", "model_id") VALUES (:data_preprocessing_steps:, :features:, :model_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\High.php(18): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\High->add()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\High))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-09 10:55:33 --> ErrorException: pg_query(): Query failed: ERROR:  malformed array literal: &quot;asd&quot;
+LINE 1: ...rocessing_steps&quot;, &quot;features&quot;, &quot;model_id&quot;) VALUES ('asd', '10...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information. in C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "hi...')
+#2 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "hi...')
+#3 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "hi...')
+#4 C:\xampp\htdocs\MLSolutions\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "hi...', Array, false)
+#5 C:\xampp\htdocs\MLSolutions\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\MLSolutions\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\MLSolutions\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\MLSolutions\app\Controllers\High.php(18): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(934): App\Controllers\High->add()
+#10 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\High))
+#11 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\MLSolutions\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-07-09 10:55:33 --> pg_query(): Query failed: ERROR:  malformed array literal: &quot;asd&quot;
+LINE 1: ...rocessing_steps&quot;, &quot;features&quot;, &quot;model_id&quot;) VALUES ('asd', '10...
+                                                             ^
+DETAIL:  Array value must start with &quot;{&quot; or dimension information.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "highlight" ("data_preprocessing_steps", "features", "model_id") VALUES (:data_preprocessing_steps:, :features:, :model_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\High.php(18): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\High->add()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\High))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 10:58:23 --> implode(): Argument #2 ($array) must be of type ?array, string given
+in APPPATH\Views\model.php on line 153.
+ 1 APPPATH\Views\model.php(153): implode(', ', 'asd')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\model.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('model', [], true)
+ 5 APPPATH\Controllers\Model.php(54): view('model', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Model->viewModel('15', '15')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Model))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-09 12:50:39 --> Error connecting to the database: ErrorException: pg_pconnect(): Unable to connect to PostgreSQL server: FATALE:  autenticazione con password fallita per l'utente &quot;postgres&quot; in C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php:75
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_pconnect(): ...', 'C:\\xampp\\htdocs...', 75)
+#1 C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php(75): pg_pconnect('host=localhost ...')
+#2 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(true)
+#3 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\MLSolutions\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\MLSolutions\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\MLSolutions\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\MLSolutions\app\Controllers\Home.php(19): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\MLSolutions\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-07-09 12:50:39 --> Unable to connect to the database.
+Main connection [postgre]: pg_pconnect(): Unable to connect to PostgreSQL server: FATALE:  autenticazione con password fallita per l'utente &quot;postgres&quot;
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "model"', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(19): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-09 12:50:47 --> Error connecting to the database: ErrorException: pg_pconnect(): Unable to connect to PostgreSQL server: FATALE:  autenticazione con password fallita per l'utente &quot;postgres&quot; in C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php:75
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_pconnect(): ...', 'C:\\xampp\\htdocs...', 75)
+#1 C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php(75): pg_pconnect('host=localhost ...')
+#2 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect(true)
+#3 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\MLSolutions\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\MLSolutions\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\MLSolutions\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\MLSolutions\app\Controllers\Home.php(19): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\MLSolutions\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-07-09 12:50:47 --> Unable to connect to the database.
+Main connection [postgre]: pg_pconnect(): Unable to connect to PostgreSQL server: FATALE:  autenticazione con password fallita per l'utente &quot;postgres&quot;
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "model"', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(19): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-09 12:51:38 --> ErrorException: pg_query(): Query failed: ERRORE:  la relazione &quot;model&quot; non esiste
+LINE 2: FROM &quot;model&quot;
+             ^ in C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'SELECT *\nFROM "...')
+#2 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 C:\xampp\htdocs\MLSolutions\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 C:\xampp\htdocs\MLSolutions\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\MLSolutions\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\MLSolutions\app\Controllers\Home.php(19): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#9 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\MLSolutions\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-07-09 12:51:38 --> pg_query(): Query failed: ERRORE:  la relazione &quot;model&quot; non esiste
+LINE 2: FROM &quot;model&quot;
+             ^
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "model"', [], false)
+ 2 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(19): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 14:32:56 --> Class "App\Controllers\PaymentModel" not found
+in APPPATH\Controllers\Registrazione.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Registrazione->registra()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registrazione))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 14:34:18 --> Undefined constant "App\Controllers\payment_info"
+in APPPATH\Controllers\Registrazione.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Registrazione->registra()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registrazione))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-09 14:34:32 --> ErrorException: pg_query(): Query failed: ERRORE:  un valore chiave duplicato viola il vincolo univoco &quot;customer_email_address_key&quot;
+DETAIL:  La chiave (email)=(bell@gmail.com) esiste già. in C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "cu...')
+#2 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "cu...')
+#3 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "cu...')
+#4 C:\xampp\htdocs\MLSolutions\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "cu...', Array, false)
+#5 C:\xampp\htdocs\MLSolutions\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\MLSolutions\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\MLSolutions\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\MLSolutions\app\Controllers\Registrazione.php(30): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(934): App\Controllers\Registrazione->registra()
+#10 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registrazione))
+#11 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\MLSolutions\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-07-09 14:34:32 --> pg_query(): Query failed: ERRORE:  un valore chiave duplicato viola il vincolo univoco &quot;customer_email_address_key&quot;
+DETAIL:  La chiave (email)=(bell@gmail.com) esiste già.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "customer" ("company_name", "email", "password", "first_name", "surname") VALUES (:company_name:, :email:, :password:, :first_name:, :surname:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Registrazione.php(30): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Registrazione->registra()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registrazione))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-09 14:35:51 --> ErrorException: pg_query(): Query failed: ERRORE:  un valore chiave duplicato viola il vincolo univoco &quot;customer_email_address_key&quot;
+DETAIL:  La chiave (email)=(bell@gmail.com) esiste già. in C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "cu...')
+#2 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "cu...')
+#3 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "cu...')
+#4 C:\xampp\htdocs\MLSolutions\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "cu...', Array, false)
+#5 C:\xampp\htdocs\MLSolutions\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\MLSolutions\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\MLSolutions\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\MLSolutions\app\Controllers\Registrazione.php(30): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(934): App\Controllers\Registrazione->registra()
+#10 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registrazione))
+#11 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\MLSolutions\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-07-09 14:35:51 --> pg_query(): Query failed: ERRORE:  un valore chiave duplicato viola il vincolo univoco &quot;customer_email_address_key&quot;
+DETAIL:  La chiave (email)=(bell@gmail.com) esiste già.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "customer" ("company_name", "email", "password", "first_name", "surname") VALUES (:company_name:, :email:, :password:, :first_name:, :surname:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Registrazione.php(30): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Registrazione->registra()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registrazione))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 14:36:28 --> Class "App\Models\CreditCardModel" not found
+in APPPATH\Controllers\Registrazione.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Registrazione->registra()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registrazione))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 14:40:05 --> Class "App\Models\CreditCardModel" not found
+in APPPATH\Controllers\Registrazione.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Registrazione->registra()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registrazione))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 14:51:43 --> Class "App\Models\CreditCardModel" not found
+in APPPATH\Controllers\Registrazione.php on line 65.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Registrazione->registra()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registrazione))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-09 14:53:26 --> ErrorException: pg_query(): Query failed: ERRORE:  la colonna &quot;amount&quot; della relazione &quot;creditcard&quot; non esiste
+LINE 1: INSERT INTO &quot;creditcard&quot; (&quot;customer_id&quot;, &quot;amount&quot;) VALUES (8...
+                                                 ^ in C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "cr...')
+#2 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "cr...')
+#3 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "cr...')
+#4 C:\xampp\htdocs\MLSolutions\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "cr...', Array, false)
+#5 C:\xampp\htdocs\MLSolutions\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\MLSolutions\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\MLSolutions\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\MLSolutions\app\Controllers\Registrazione.php(66): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(934): App\Controllers\Registrazione->registra()
+#10 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registrazione))
+#11 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\MLSolutions\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-07-09 14:53:26 --> pg_query(): Query failed: ERRORE:  la colonna &quot;amount&quot; della relazione &quot;creditcard&quot; non esiste
+LINE 1: INSERT INTO &quot;creditcard&quot; (&quot;customer_id&quot;, &quot;amount&quot;) VALUES (8...
+                                                 ^
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "creditcard" ("customer_id", "amount") VALUES (:customer_id:, :amount:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Registrazione.php(66): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Registrazione->registra()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registrazione))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-09 14:54:22 --> ErrorException: pg_query(): Query failed: ERRORE:  il valore nullo nella colonna &quot;cardnum&quot; della relazione &quot;creditcard&quot; viola il vincolo non nullo
+DETAIL:  La riga in errore contiene (null, 9). in C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "cr...')
+#2 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "cr...')
+#3 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "cr...')
+#4 C:\xampp\htdocs\MLSolutions\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "cr...', Array, false)
+#5 C:\xampp\htdocs\MLSolutions\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\MLSolutions\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\MLSolutions\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\MLSolutions\app\Controllers\Registrazione.php(64): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(934): App\Controllers\Registrazione->registra()
+#10 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registrazione))
+#11 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\MLSolutions\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-07-09 14:54:23 --> pg_query(): Query failed: ERRORE:  il valore nullo nella colonna &quot;cardnum&quot; della relazione &quot;creditcard&quot; viola il vincolo non nullo
+DETAIL:  La riga in errore contiene (null, 9).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "creditcard" ("customer_id") VALUES (:customer_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Registrazione.php(64): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Registrazione->registra()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registrazione))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-09 14:57:34 --> ErrorException: pg_query(): Query failed: ERRORE:  il valore nullo nella colonna &quot;cardnum&quot; della relazione &quot;creditcard&quot; viola il vincolo non nullo
+DETAIL:  La riga in errore contiene (null, 10). in C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "cr...')
+#2 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "cr...')
+#3 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "cr...')
+#4 C:\xampp\htdocs\MLSolutions\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "cr...', Array, false)
+#5 C:\xampp\htdocs\MLSolutions\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\MLSolutions\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\MLSolutions\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\MLSolutions\app\Controllers\Registrazione.php(64): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(934): App\Controllers\Registrazione->registra()
+#10 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registrazione))
+#11 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\MLSolutions\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-07-09 14:57:34 --> pg_query(): Query failed: ERRORE:  il valore nullo nella colonna &quot;cardnum&quot; della relazione &quot;creditcard&quot; viola il vincolo non nullo
+DETAIL:  La riga in errore contiene (null, 10).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "creditcard" ("customer_id") VALUES (:customer_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Registrazione.php(64): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Registrazione->registra()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registrazione))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-09 15:00:21 --> ErrorException: pg_query(): Query failed: ERRORE:  un valore chiave duplicato viola il vincolo univoco &quot;customer_email_address_key&quot;
+DETAIL:  La chiave (email)=(ngklfg@gfjdklgfd.cpom) esiste già. in C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "cu...')
+#2 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "cu...')
+#3 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "cu...')
+#4 C:\xampp\htdocs\MLSolutions\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "cu...', Array, false)
+#5 C:\xampp\htdocs\MLSolutions\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\MLSolutions\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\MLSolutions\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\MLSolutions\app\Controllers\Registrazione.php(30): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(934): App\Controllers\Registrazione->registra()
+#10 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registrazione))
+#11 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\MLSolutions\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-07-09 15:00:21 --> pg_query(): Query failed: ERRORE:  un valore chiave duplicato viola il vincolo univoco &quot;customer_email_address_key&quot;
+DETAIL:  La chiave (email)=(ngklfg@gfjdklgfd.cpom) esiste già.
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "customer" ("company_name", "email", "password", "first_name", "surname") VALUES (:company_name:, :email:, :password:, :first_name:, :surname:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Registrazione.php(30): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Registrazione->registra()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registrazione))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-09 15:00:47 --> ErrorException: pg_query(): Query failed: ERRORE:  il valore nullo nella colonna &quot;cardnum&quot; della relazione &quot;creditcard&quot; viola il vincolo non nullo
+DETAIL:  La riga in errore contiene (null, 12). in C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php:147
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\MLSolutions\system\Database\Postgre\Connection.php(147): pg_query(Object(PgSql\Connection), 'INSERT INTO "cr...')
+#2 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(691): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "cr...')
+#3 C:\xampp\htdocs\MLSolutions\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "cr...')
+#4 C:\xampp\htdocs\MLSolutions\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "cr...', Array, false)
+#5 C:\xampp\htdocs\MLSolutions\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#6 C:\xampp\htdocs\MLSolutions\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#7 C:\xampp\htdocs\MLSolutions\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#8 C:\xampp\htdocs\MLSolutions\app\Controllers\Registrazione.php(58): CodeIgniter\Model->insert(Array)
+#9 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(934): App\Controllers\Registrazione->registra()
+#10 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registrazione))
+#11 C:\xampp\htdocs\MLSolutions\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\MLSolutions\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-07-09 15:00:47 --> pg_query(): Query failed: ERRORE:  il valore nullo nella colonna &quot;cardnum&quot; della relazione &quot;creditcard&quot; viola il vincolo non nullo
+DETAIL:  La riga in errore contiene (null, 12).
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO "creditcard" ("customer_id") VALUES (:customer_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Registrazione.php(58): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Registrazione->registra()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registrazione))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 15:08:25 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('registra', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 15:09:42 --> Undefined array key "payment_information"
+in APPPATH\Controllers\Login.php on line 35.
+ 1 APPPATH\Controllers\Login.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "payment_information"', 'APPPATH\\Controllers\\Login.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->autenticazione()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 20:46:39 --> Class "App\Controllers\PaymentModel" not found
+in APPPATH\Controllers\CustomerProfile.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CustomerProfile->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerProfile))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 20:47:48 --> Array to string conversion
+in APPPATH\Views\profilo.php on line 107.
+ 1 APPPATH\Views\profilo.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\profilo.php', 107)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\profilo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('profilo', [], true)
+ 5 APPPATH\Controllers\CustomerProfile.php(87): view('profilo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CustomerProfile->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerProfile))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 20:53:16 --> Undefined array key "platform_type"
+in APPPATH\Views\profilo.php on line 144.
+ 1 APPPATH\Views\profilo.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "platform_type"', 'APPPATH\\Views\\profilo.php', 144)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\profilo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('profilo', [], true)
+ 5 APPPATH\Controllers\CustomerProfile.php(87): view('profilo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CustomerProfile->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerProfile))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 20:57:50 --> Undefined array key "platform_type"
+in APPPATH\Views\profilo.php on line 144.
+ 1 APPPATH\Views\profilo.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "platform_type"', 'APPPATH\\Views\\profilo.php', 144)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\profilo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('profilo', [], true)
+ 5 APPPATH\Controllers\CustomerProfile.php(87): view('profilo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CustomerProfile->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerProfile))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 21:01:17 --> Undefined array key "format"
+in APPPATH\Views\profilo.php on line 166.
+ 1 APPPATH\Views\profilo.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "format"', 'APPPATH\\Views\\profilo.php', 166)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\profilo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('profilo', [], true)
+ 5 APPPATH\Controllers\CustomerProfile.php(87): view('profilo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CustomerProfile->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerProfile))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 21:03:17 --> Undefined array key "format"
+in APPPATH\Views\profilo.php on line 166.
+ 1 APPPATH\Views\profilo.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "format"', 'APPPATH\\Views\\profilo.php', 166)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\profilo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('profilo', [], true)
+ 5 APPPATH\Controllers\CustomerProfile.php(87): view('profilo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CustomerProfile->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerProfile))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 21:07:09 --> Undefined array key "corresponding_documentation"
+in APPPATH\Views\profilo.php on line 161.
+ 1 APPPATH\Views\profilo.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "corresponding_documentation"', 'APPPATH\\Views\\profilo.php', 161)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\profilo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('profilo', [], true)
+ 5 APPPATH\Controllers\CustomerProfile.php(87): view('profilo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CustomerProfile->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerProfile))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
